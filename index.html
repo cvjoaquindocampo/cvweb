@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+       
+        
+
+        <title>Portfolio responsive</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Joaquin Do Campo</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre mi</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>Hola</span><br></h1>
+                    
+
+                    
+
+                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">Sobre mi</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/perfil2.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">Hola! Soy Joaquin</h2>
+                        <span class="about__profession">Web designer</span>
+                        <p class="about__text">Soy una persona creativa, predispuesta y
+                            resposable. Cuento con capacidad para
+                            adaptarme a los cambios y facilidad para el
+                            trabajo en equipo y las tareas relacionadas
+                            con manualidades y mantenimiento.
+                            Aficionado a las nuevas tecnologías, me
+                            encuentro en búsqueda de un nuevo desafío
+                            laboral vinculado al Diseño Web y
+                            Programación que me permita aplicar los
+                            conocimientos adquiridos en mi formación
+                            académica, incorporar nuevos, y de esa
+                            manera desarrollarme tanto personal como
+                            profesionalmente.</p>
+
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/joaquin-docampo" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/LaCien" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <div class="titulo-habilidades" id="skills">
+                <h2 class="">Habilidades</h2>
+            </div>
+            <div class="wrapper">
+                <div class="card">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">HTML & CSS</div>
+                </div>
+                <div class="card js">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">JavaScript</div>
+                </div>
+                <div class="card react">
+                  <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span></span></div>
+                  </div>
+                  <div class="text">React JS</div>
+                </div>
+              </div>
+          
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/wparadio.png" alt="wparadio">
+
+                        <div class="portfolio__link">
+                            <a href="https://lacien.github.io/pwa-radio-lacien/" class="portfolio__link-name">PWA Radio</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/vicius.png" alt="visiuc">
+
+                        <div class="portfolio__link">
+                            <a href="https://lacien.000webhostapp.com/#" class="portfolio__link-name">Vicius</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/juegos.png" alt="juegos">
+
+                        <div class="portfolio__link">
+                            <a href="./juegos/index.html" class="portfolio__link-name">Juegos Retros</a>
+                        </div>
+                    </div>
+                    
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contacto</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">joaquindocampo14@gmail.com</span>
+
+                        <h3 class="contact__subtitle">TELEFONO</h3>
+                        <span class="contact__text">+5493517718114</span>
+
+                        <h3 class="contact__subtitle">CIUDAD</h3>
+                        <span class="contact__text">Córdoba, Argentina</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Nombre" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">JOAQUIN DO CAMPO</h2>
+                    <p class="footer__text">Esta es mi página web personal.</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORA</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Inicio</a></li>
+                        <li><a href="#about" class="footer__link">Sobre mi</a></li>
+                        <li><a href="#skills" class="footer__link">habilidades</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="sweetAlert2.js"></script>
+        <script src="grafico.js"></script>
+    </body>
+</html>
