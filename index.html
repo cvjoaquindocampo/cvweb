@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- ===== BOX ICONS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">        
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-
-       
-        
-
-        <title>Portfolio responsive</title>
+        <title>CV - Portfolio</title>
     </head>
     <body>
-        <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
@@ -32,7 +20,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">Sobre mi</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Trabajos</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
                     </ul>
                 </div>
@@ -44,31 +32,36 @@
         </header>
 
         <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>Hola</span><br></h1>
-                    
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hola,<br>soy <span class="home__title-color">Joaquin</span><br> Web Designer</h1>
 
-                    
+                    <a href="#" class="button">Contacto</a>
+                    <a href="#" class="button">Descargar CV</a>
+                </div>
 
-                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/joaquin-docampo/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    
+                    <a href="https://github.com/cvjoaquindocampo" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
                 </div>
             </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
+
+            <section class="about section " id="about">
                 <h2 class="section-title">Sobre mi</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/perfil2.png" alt="">
+                        <img src="assets/img/about.png" alt="">
                     </div>
-
+                    
                     <div>
-                        <h2 class="about__subtitle">Hola! Soy Joaquin</h2>
-                        <span class="about__profession">Web designer</span>
-                        <p class="about__text">Soy una persona creativa, predispuesta y
+                        <h2 class="about__subtitle">HOLA!</h2>
+                        <!-- <p class="about__text">Soy una persona creativa, predispuesta y
                             resposable. Cuento con capacidad para
                             adaptarme a los cambios y facilidad para el
                             trabajo en equipo y las tareas relacionadas
@@ -80,142 +73,130 @@
                             conocimientos adquiridos en mi formación
                             académica, incorporar nuevos, y de esa
                             manera desarrollarme tanto personal como
-                            profesionalmente.</p>
-
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/joaquin-docampo" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/LaCien" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            
-                        </div>
-                    </div>
+                            profesionalmente.</p>  -->
+                            <p class="about__text">Soñador e imaginador de pequeño.
+                            Uso mi ingenio para resolver de manera práctica y creativa.
+                            Soy apasionado por el arte, la fotografía y el cine.</p>
+                            <p class="about__text">Mi facilidad: la resolución técnica de ordenadores.</p>
+                            <p class="about__text">Mi especialidad: autodidacta perseverante.</p>  
+                            <p class="about__text">Mi hobbie: tatuar estilo line work.</p>         
+                    </div>                                   
                 </div>
             </section>
 
-            <!--===== SKILLS =====-->
-            <div class="titulo-habilidades" id="skills">
-                <h2 class="">Habilidades</h2>
-            </div>
-            <div class="wrapper">
-                <div class="card">
-                  <div class="circle">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                  </div>
-                  <div class="text">HTML & CSS</div>
-                </div>
-                <div class="card js">
-                  <div class="circle">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                  </div>
-                  <div class="text">JavaScript</div>
-                </div>
-                <div class="card react">
-                  <div class="circle">
-                    <div class="bar"></div>
-                    <div class="box"><span></span></div>
-                  </div>
-                  <div class="text">React JS</div>
-                </div>
-              </div>
-          
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
 
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Conocimientos</h2>
+                        <p class="skills__text">aca tendria q poner algo copado</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/wparadio.png" alt="wparadio">
-
-                        <div class="portfolio__link">
-                            <a href="./radio/PWA-radio-streaming-master/index.html" class="portfolio__link-name">PWA Radio</a>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/vicius.png" alt="visiuc">
-
-                        <div class="portfolio__link">
-                            <a href="./Vicius/index.html" class="portfolio__link-name">Vicius</a>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/juegos.png" alt="juegos">
-
-                        <div class="portfolio__link">
-                            <a href="./juegos/index.html" class="portfolio__link-name">Juegos Retros</a>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">DISEÑO GRÁFICO Y MULTIMEDIA</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
                     </div>
                     
+                    <div>              
+                        <img src="assets/img/habilidades.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
             </section>
 
-            <!--===== CONTACT =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Trabajos</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">                        
+                        <a href="./Vicius/index.html"><img src="assets/img/vicius.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://lacien.github.io/pwa-radio-lacien/"><img src="assets/img/wparadio.png" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="./juegos/index.html"><img src="assets/img/juegos.png" alt=""></a>
+                        
+                    </div>
+                    <div class="work__img">
+                        <a href="https://www.instagram.com/p/CDcqVM8g5eP/?utm_source=ig_web_copy_link"><img src="assets/img/bufon.jpg" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/1IUHUAF1AHM3o8nJ86GBfpl8blLFaq3T5/view?usp=sharing"><img src="assets/img/palinato.jpg" alt=""></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contacto</h2>
 
                 <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">joaquindocampo14@gmail.com</span>
-
-                        <h3 class="contact__subtitle">TELEFONO</h3>
-                        <span class="contact__text">+5493517718114</span>
-
-                        <h3 class="contact__subtitle">CIUDAD</h3>
-                        <span class="contact__text">Córdoba, Argentina</span>
-                    </div>
-
                     <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Nombre" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
+                        <input type="text" placeholder="Nombre" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
+                        <input type="button" value="Enviar" class="contact__button button">
                     </form>
                 </div>
             </section>
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">JOAQUIN DO CAMPO</h2>
-                    <p class="footer__text">Esta es mi página web personal.</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORA</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Inicio</a></li>
-                        <li><a href="#about" class="footer__link">Sobre mi</a></li>
-                        <li><a href="#skills" class="footer__link">habilidades</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                </div>
-
-
+        <footer class="footer">
+            <p class="footer__title">Joaquin Do Campo</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/joaquin-docampo/" class="footer_icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/joacodocampo.png/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
             </div>
+            <p>&#169; 2020 Derechos reservados</p>
         </footer>
 
-        <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-       
-       
-        <script src="grafico.js"></script>
     </body>
 </html>
