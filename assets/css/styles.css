@@ -246,6 +246,7 @@ img{
 .about__img img{
   width: 200px;
   border-radius: .5rem;
+  display: none;
 }
 
 /* ===== SKILLS =====*/
@@ -424,7 +425,8 @@ img{
     text-align: initial;
   }
   .about__img img{
-    width: 300px;
+    display: block;
+    
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
@@ -437,6 +439,9 @@ img{
   .contact__container{
     justify-items: center;
   }
+  .skills__img{
+    justify-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -446,5 +451,21 @@ img{
   }
   .home__img{
     right: 10%;
+  }
+}
+@media screen and (min-width: 359px){
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__img{
+    width: 250px;
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .about__img img{
+    display: hidden;
   }
 }
