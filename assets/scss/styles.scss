@@ -223,7 +223,7 @@ img{
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 295px;
+        width: 250px;
     }
 }
 
@@ -257,6 +257,7 @@ img{
         & img{
             width: 200px;
             border-radius: .5rem;
+            display: none;
         }
     }
 }
@@ -436,7 +437,7 @@ img{
             }
         }
         &__img{
-            width: 457px;
+            width: 250px;
             bottom: 15%;
         }
     }
@@ -450,6 +451,7 @@ img{
         &__img{
             & img{
                 width: 300px;
+                display: block;
             }
         }
     }

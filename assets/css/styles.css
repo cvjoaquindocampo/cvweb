@@ -216,7 +216,7 @@ img{
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 250px;
 }
 
 /*BUTTONS*/
@@ -442,6 +442,8 @@ img{
   .skills__img{
     justify-items: center;
   }
+  
+  
 }
 
 @media screen and (min-width: 1024px){
@@ -458,14 +460,8 @@ img{
     margin-left: auto;
     margin-right: auto;
   }
-  .home__img{
-    width: 250px;
-    right: 10%;
-  }
+  
 }
 
-@media screen and (min-width: 600px){
-  .about__img img{
-    display: hidden;
-  }
-}
+
+/* 376 */
